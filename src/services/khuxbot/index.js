@@ -5,7 +5,10 @@ const format_medal_information = (api_medal_info) => {
   return {
     name: api_medal_info.name,
     image_link: "http://www.khuxbot.com" + api_medal_info.image_link,
-    id: api_medal_info.id
+    id: api_medal_info.id,
+    description: api_medal_info.notes,
+    strength: api_medal_info.strength,
+    defense: api_medal_info.defence,
   }
 }
 const format = R.pipe(
